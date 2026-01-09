@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poppins&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* center utility */
+.center {
+  min-height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+}
+
+/* ========== SCAN PAGE ========== */
+.scan-box {
+  width: 100%;
+  max-width: 380px;
+  text-align: center;
+  padding: 24px;
+}
+
+.scan-box h1 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.scan-box p {
+  font-size: 14px;
+  opacity: 0.8;
+  margin-bottom: 16px;
+}
+
+video {
+  width: 100%;
+  max-width: 800px;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  border-radius: 16px;
+  margin: 16px 0;
+}
+
+/* button */
+button {
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  border-radius: 30px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* tap feedback */
+button:active {
+  transform: scale(0.97);
+}
+
+/* ========== LETTER CARD ========== */
+.letter {
+  width: 100%;
+  max-width: 520px;
+  padding: 28px 24px;
+  border-radius: 22px;
+  background: rgba(255,255,255,0.85);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 20px 35px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+/* heading */
+.letter h2 {
+  font-family: 'Dancing Script', cursive;
+  font-size: clamp(28px, 6vw, 38px);
+  margin-bottom: 16px;
+}
+
+/* text */
+.letter p {
+  font-size: clamp(15px, 4vw, 18px);
+  line-height: 1.7;
+  margin-bottom: 14px;
+}
+
+.letter span {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* ========== BACKGROUNDS ========== */
+.happy-bg {
+  background: linear-gradient(135deg, #fddb92, #d1fdff);
+}
+
+.sad-bg {
+  background: linear-gradient(135deg, #89f7fe, #66a6ff);
+}
+
+.calm-bg {
+  background: linear-gradient(135deg, #c1dfc4, #deecdd);
+}
+
+/* ========== DESKTOP UPGRADE ========== */
+@media (min-width: 768px) {
+  .scan-box h1 {
+    font-size: 34px;
+  }
+
+  button {
+    max-width: 260px;
+    margin: 0 auto;
+  }
+}
